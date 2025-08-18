@@ -1,16 +1,27 @@
 import React from "react";
+import PrimaryButton from "./Buttons/PrimaryButton.jsx";
+import github from '../assets/icons8-github.svg';
+import linkedin from '../assets/icons8-linkedin.svg';
+import email from '../assets/email.png';
 
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-between font-space mt-10 lg:mt-0 mb-10 h-auto lg:h-[calc(100vh-85px)]">
+    <div id="home" className="flex flex-col justify-between font-space pt-10 lg:pt-0 pb-8 h-auto lg:h-[calc(100vh-85px)] bg-background">
       <div className="flex-1 flex flex-col justify-center items-center">
-        <h3 className="text-primary text-xl lg:text-4xl tracking-wider text-center">
-          FULL STACK WEB DEVELOPER
+        <h3 className="uppercase text-primary text-xl lg:text-2xl tracking-wider text-left lg:pr-160">
+          full stack developer
         </h3>
-        <div className="text-6xl lg:text-9xl mt-10 text-center font-bold text-white">
-          <h1>CRAIG</h1>
-          <h1>SAMPSON</h1>
+        <div className="text-6xl lg:text-9xl my-10 lg:my-5 text-center font-bold text-white">
+          <h1>CRAIG SAMPSON</h1>
         </div>
+        <h3 className="uppercase text-primary px-5 lg:px-0 text-sm lg:text-3xl text-center">
+          Crafting Modern Web Experiences with Clean Code and Design
+        </h3>
+      </div>
+      <div className="flex justify-center mt-10 lg:mt-0 lg:mb-8 gap-2 lg:gap-4">
+        <PrimaryButton img={github} link="https://github.com/csam15" label="GITHUB" />
+        <PrimaryButton img={email} link="#contact" label="CONTACT" />
+        <PrimaryButton img={linkedin} link="https://www.linkedin.com/in/craig-sampson15/" label="LINKEDIN" />
       </div>
       <div
         id="hero-info"

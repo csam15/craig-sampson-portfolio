@@ -3,15 +3,17 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About/About.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import Contact from "./components/Contact/Contact.jsx"; 
 
 function App() {
   return (
-    <div className="bg-background">
-      <div>
-        <Header />
-        <Hero />
-      </div>
+    <div>
+      <Header className="sticky top-0 z-50" />
+      <Hero />
       <About />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

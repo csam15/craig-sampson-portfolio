@@ -6,8 +6,9 @@
   --font-space: 'Space Grotesk', sans-serif;  
 
   --color-background: #161616;
+  --color-white: #d6d6d6;
   --color-primary: #d1b3f5;
   --color-secondary: #3700b3;
-  --color-accent: #03dac6;
+  --color-accent: #3fffef;
   --color-error: #cf6679;
 }

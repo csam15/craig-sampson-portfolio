@@ -11,13 +11,13 @@ export default function Hero() {
       className="scroll-mt-20 flex flex-col justify-between font-space pt-10 lg:pt-0 pb-8 h-auto lg:h-[calc(100vh-85px)] bg-background"
     >
       <div className="flex-1 flex flex-col justify-center items-center">
-        <h3 className="uppercase text-primary text-xl lg:text-2xl tracking-wider text-left lg:pr-160">
+        <h3 className="font-outfit uppercase text-primary text-xl lg:text-2xl tracking-wider text-left lg:pr-160">
           full stack developer
         </h3>
         <div className="text-6xl lg:text-9xl my-10 lg:my-5 text-center font-bold text-white">
           <h1>CRAIG SAMPSON</h1>
         </div>
-        <h3 className="uppercase text-primary px-5 lg:px-0 text-sm lg:text-3xl text-center">
+        <h3 className="uppercase font-outfit text-primary px-5 lg:px-0 text-sm lg:text-3xl text-center">
           Crafting Modern Web Experiences with Clean Code and Design
         </h3>
         <div className="flex justify-center mt-10 gap-2 lg:gap-8">

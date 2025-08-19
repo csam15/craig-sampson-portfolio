@@ -10,7 +10,7 @@ export default function NavBar() {
       let current = "home";
       sections.forEach(id => {
         const el = document.getElementById(id);
-        if (el && window.scrollY >= el.offsetTop - 200) {
+        if (el && window.scrollY >= el.offsetTop - 100) {
           current = id;
         }
       });

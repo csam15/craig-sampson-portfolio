@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="scroll-mt-18 font-space text-secondary h-auto bg-white pt-8 pb-8 lg:px-40 "
+      className="scroll-mt-18 font-space text-primary h-auto bg-background pb-8 lg:px-40 "
     >
       <h1 className=" text-6xl lg:text-8xl text-center xl:text-left mb-8">
         ABOUT

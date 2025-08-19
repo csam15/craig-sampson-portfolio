@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PrimaryButton from "./Buttons/PrimaryButton.jsx";
 import github from "../assets/icons8-github.svg";
 import linkedin from "../assets/icons8-linkedin.svg";
 import email from "../assets/email.png";
+import PageBreak from "./PageBreak.jsx";
 
 export default function Hero() {
   return (
     <div
       id="home"
-      className="scroll-mt-20 flex flex-col justify-between font-space pt-10 lg:pt-0 pb-8 h-auto lg:h-[calc(100vh-85px)] bg-background"
+      className="scroll-mt-20 flex flex-col justify-between font-space pt-10 lg:pt-0 h-auto lg:h-[calc(100vh-85px)] bg-background"
     >
       <div className="flex-1 flex flex-col justify-center items-center">
         <h3 className="font-outfit uppercase text-primary text-xl lg:text-2xl tracking-wider text-left lg:pr-160">
@@ -34,16 +35,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div
-        id="hero-info"
-        className="flex items-center justify-between text-center px-10 lg:px-40 pt-10 lg:text-xl  tracking-wider text-primary"
-      >
-        <h3>
-          <span className="block lg:hidden">BASED IN NYC</span>
-          <span className="hidden lg:block">BASED IN NEW YORK CITY</span>
-        </h3>
-        <h3 className="ml-5">AVAILABLE FOR HIRE</h3>
-      </div>
+      <PageBreak text="• nyc • Available for Freelance & Full-Time Roles" />
     </div>
   );
 }

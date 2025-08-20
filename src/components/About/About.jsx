@@ -1,5 +1,5 @@
 import React from "react";
-import Headshot from "../../assets/headshot_placeholder.jpg";
+import Headshot from "../../assets/headshot.png";
 import TechStack from "./TechStack.jsx";
 
 export default function About() {
@@ -16,18 +16,16 @@ export default function About() {
           <img
             src={Headshot}
             alt="Headshot alternate"
-            className="h-35 lg:h-60 mb-5 rounded-full"
+            className="h-50 mb-5 rounded-full bg-white"
           />
-          <h3 className="text-xl px-5 lg:text-3xl max-w-200 pb-5 lg:pr-8">
+          <h3 className="text-xl px-5 lg:text-3xl max-w-150 pb-5 lg:pr-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             finibus, leo a mattis facilisis, risus nunc laoreet mi, sit amet
             condimentum tortor nisl sit amet eros. Aenean metus diam, tincidunt
             id tincidunt ut, pulvinar sit amet tellus. Ut molestie ipsum ac
             mauris ornare, eu malesuada odio eleifend. Maecenas id dui lectus.
             Aenean eleifend enim quis felis tempus tristique. Fusce at nisl nec
-            mauris euismod tristique. Curabitur eu tellus mauris. Sed fringilla
-            diam nec quam pretium consequat. Aenean pellentesque lorem id sapien
-            tempus, eget dignissim dolor euismod. Pellentesque tellus augue,
+            mauris euismod tristique. Curabitur eu tellus mauris.
           </h3>
         </div>
        <div>

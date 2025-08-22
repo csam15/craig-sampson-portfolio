@@ -21,14 +21,18 @@ const otherTech = [cad, seo, devices];
 
 export default function TechStack() {
   return (
-    <div className="flex flex-col justify-center font-outfit text-primary items-center max-w-xl">
-      <h1 className=" text-3xl lg:text-5xl underline">Skill set</h1>
-      <h3 className=" text-xl lg:text-3xl py-4 lg:py-10 ">Web Development</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
+    <div className="flex flex-col justify-center font-outfit text-primary items-center w-full max-w-2xl">
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold underline decoration-2 underline-offset-4">
+        Skills & Technologies
+      </h1>
+      <h3 className="text-lg sm:text-xl lg:text-2xl py-4 lg:py-6 text-gray-300">
+        Web Development
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 w-75 sm:w-full">
         <TechStackCards imageArray={frontend} title="Frontend" />
         <TechStackCards imageArray={backend} title="Backend" />
-        <TechStackCards imageArray={otherTech} title="Other Tech" />
         <TechStackCards imageArray={languages} title="Languages" />
+        <TechStackCards imageArray={otherTech} title="Other Tech" />
       </div>
     </div>
   );

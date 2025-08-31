@@ -35,8 +35,8 @@ export default function NavBar() {
           {sections.map((section) => (
             <li key={section}>
               <a
-                href={`#${section}`}
-                className={`hover:text-accent cursor-pointer transition-colors duration-600 ease-in-out ${
+                // href={`#${section}`}
+                className={`hover:text-accent pointer-events-none transition-colors duration-600 ease-in-out ${
                   section !== "resume" && active === section
                     ? "border-b border-primary"
                     : ""

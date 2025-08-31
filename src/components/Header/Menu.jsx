@@ -29,7 +29,7 @@ export default function Menu() {
 
   return (
     <div className="lg:hidden">
-      <button onClick={toggleMenu} className="cursor-pointer">
+      <button onClick={toggleMenu} disabled className="cursor-pointer">
         {isOpen ? (
           <img src={x} alt="Close Menu" className="h-10 md:h-12" />
         ) : (

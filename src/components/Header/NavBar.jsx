@@ -8,22 +8,30 @@ export default function NavBar() {
   useEffect(() => {
     const handleScroll = () => {
       let current = "home";
-      sections.forEach((id) => {
+      const scrollPosition = window.scrollY + 150;
+      
+      // Check sections in reverse order to handle overlapping sections
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const id = sections[i];
         const el = document.getElementById(id);
-        if (el && window.scrollY >= el.offsetTop - 100) {
+        if (el && scrollPosition >= el.offsetTop) {
           current = id;
+          break;
         }
-      });
+      }
+      
       setActive(current);
     };
+    
+    handleScroll(); // Set initial active section
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      <nav className="hidden lg:block">
-        <ul className="flex space-x-8 font-space text-primary">
+      <nav className="hidden md:block">
+        <ul className="flex space-x-8 font-space md:text-lg lg:text-xl text-primary">
           {sections.map((section) => (
             <li key={section}>
               <a

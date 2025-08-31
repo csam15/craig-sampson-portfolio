@@ -13,6 +13,7 @@ export default function PageBreak(props) {
                 className="uppercase text-primary text-sm md:text-lg lg:text-xl lg:tracking-widest w-full pr-1"
               >
                 {props.text}
+                {props.img}
               </span>
             </>
           ))}

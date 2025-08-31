@@ -1,15 +1,30 @@
 import Logo from "../../assets/react.svg";
 import NavBar from "./NavBar";
 import Menu from "./Menu";
+import Button from "../Buttons/Button.jsx";
+
+function LogoHeader() {
+  return (
+    <a href="#home" className="text-3xl font-bold text-gray-800">
+      <img src={Logo} alt="Craig Sampson Logo" />
+    </a>
+  );
+}
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background flex items-center justify-between px-12 md:px-14 py-3 md:py-5 border-b border-gray-900 shadow-md">
-      <a href="#home" className="text-3xl font-bold text-gray-800">
-        <img src={Logo} alt="Craig Sampson Logo" />
-      </a>
-      <NavBar />
-      <Menu />
+      <div className="flex items-center justify-between w-full md:hidden">
+        <LogoHeader />
+        <div className="flex items-center justify-center gap-4">
+          <Button link="#contact" label="CONTACT" button="primary" />
+          <Menu />
+        </div>
+      </div>
+      <div className="hidden md:flex md:items-center md:justify-between md:w-full relative">
+        <LogoHeader />
+        <NavBar />
+      </div>
     </header>
   );
 }

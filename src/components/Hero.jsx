@@ -10,17 +10,17 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="scroll-mt-20 flex flex-col justify-between font-space pt-10 lg:pt-0 h-[90vh] lg:h-[calc(100vh-85px)] bg-background"
+      className="scroll-mt-25 flex flex-col justify-between font-space pt-10 lg:pt-0 h-[90vh] lg:h-[calc(100vh-85px)] bg-background m-2 md:m-6 lg:my-10 lg:mx-30 rounded-3xl border-y-2 border-secondary"
     >
       <div className="flex-1 flex flex-col justify-center items-center">
-        <div className="font-outfit uppercase text-primary text-lg md:text-xl lg:text-2xl tracking-wider text-left lg:pr-160">
+        <div className="font-outfit uppercase text-primary text-center text-lg md:text-xl lg:text-2xl tracking-wider lg:pr-160">
           <TypeAnimation
             sequence={[
               "Full Stack Developer",
               3000,
               "calligraphy artist",
               2000,
-              "electronics repair specialist",
+              "electronics technician",
               2000,
             ]}
             wrapper="span"
@@ -35,7 +35,7 @@ export default function Hero() {
         <h3 className="uppercase font-outfit text-primary text-lg md:text-2xl lg:text-3xl text-center px-10 md:px-0">
           Crafting solutions through code, creativity and repair
         </h3>
-        <div className="flex justify-center mt-10 gap-2 lg:gap-8">
+        <div className="flex flex-col md:flex-row justify-center mt-10 gap-6 lg:gap-8">
           <Button
             img={github}
             link="https://github.com/csam15"
@@ -49,7 +49,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <PageBreak text="• nyc • Available for Freelance & Full-Time Roles" />
+      {/* <PageBreak text="• nyc • Available for Freelance & Full-Time Roles" /> */}
     </div>
   );
 }

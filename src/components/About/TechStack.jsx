@@ -9,30 +9,38 @@ import next from "../../assets/tech-stack/next.svg";
 import tw from "../../assets/tech-stack/twcss.svg";
 import node from "../../assets/tech-stack/node.svg";
 import py from "../../assets/tech-stack/py.svg";
-import cad from "../../assets/tech-stack/cad.svg";
 import express from "../../assets/tech-stack/express.svg";
 import seo from "../../assets/tech-stack/seo.png";
-import devices from "../../assets/tech-stack/devices.png";
 
-const frontend = [html, css, react, tw];
-const languages = [js, ts, py];
-const backend = [node, express, next];
-const otherTech = [cad, seo, devices];
+const stack = [
+  { img: html, title: "HTML" },
+  { img: css, title: "CSS" },
+  { img: js, title: "JavaScript" },
+  { img: ts, title: "TypeScript" },
+  { img: react, title: "React" },
+  { img: next, title: "Next.js" },
+  { img: tw, title: "Tailwind" },
+  { img: node, title: "Node.js" },
+  { img: express, title: "Express" },
+  { img: py, title: "Python" },
+  { img: seo, title: "SEO" },
+];
 
 export default function TechStack() {
   return (
     <div className="flex flex-col justify-center font-outfit text-primary items-center w-full max-w-2xl">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold underline decoration-2 underline-offset-4">
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold underline decoration-2 underline-offset-4 text-center">
         Skills & Technologies
       </h1>
       <h3 className="text-lg sm:text-xl lg:text-2xl py-4 lg:py-6 text-gray-300">
         Web Development
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 w-75 sm:w-full">
-        <TechStackCards imageArray={frontend} title="Frontend" />
-        <TechStackCards imageArray={backend} title="Backend" />
-        <TechStackCards imageArray={languages} title="Languages" />
-        <TechStackCards imageArray={otherTech} title="Other Tech" />
+      <div className="border-2 border-secondary rounded-xl p-6 md:p-10 lg:p-14 mb-6">
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-4 sm:gap-12 lg:gap-16 place-items-center">
+          {stack.map((tech, index) => (
+            <TechStackCards key={index} img={tech.img} title={tech.title} />
+          ))}
+        </div>
       </div>
     </div>
   );

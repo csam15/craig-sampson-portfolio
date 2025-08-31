@@ -6,21 +6,21 @@ export default function About() {
   return (
     <div
       id="about"
-      className="scroll-mt-18 font-space text-primary min-h-screen bg-background py-12 px-4 sm:px-10 lg:px-14"
+      className="scroll-mt-23 font-space text-primary min-h-screen bg-background py-12 px-4 sm:px-10 lg:px-14 m-2 md:m-6 lg:my-10 lg:mx-30 rounded-3xl border-y-2 border-secondary"
     >
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-center mb-16">
           ABOUT
         </h1>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Personal Info Section */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="mb-8">
               <img
                 src={Headshot}
                 alt="Headshot alternate"
-                className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full bg-white object-cover shadow-lg mx-auto lg:mx-0"
+                className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full bg-transparent object-cover shadow-xl mx-auto lg:mx-0"
               />
             </div>
             
@@ -50,7 +50,7 @@ export default function About() {
           </div>
 
           {/* Tech Stack Section */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center">
             <TechStack />
           </div>
         </div>

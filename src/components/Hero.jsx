@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
 import PrimaryButton from "./Buttons/PrimaryButton.jsx";
 import github from "../assets/icons8-github.svg";
 import linkedin from "../assets/icons8-linkedin.svg";
 import email from "../assets/email.png";
 import PageBreak from "./PageBreak.jsx";
+import SecondaryButton from "./Buttons/SecondaryButton.jsx";
 
 export default function Hero() {
   return (

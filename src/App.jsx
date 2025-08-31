@@ -1,22 +1,27 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import Hero from "./components/Hero.jsx";
-import About from "./components/About/About.jsx";
-import Projects from "./components/Projects/Projects.jsx";
-import Contact from "./components/Contact/Contact.jsx"; 
+import Home from "./pages/home.jsx";
+import Calligraphy from "./pages/calligraphy.jsx";
+import Electronics from "./pages/electronics.jsx";
+import WebDev from "./pages/webdev.jsx";
 
 function App() {
   return (
-    <div>
-      <Header className="sticky top-0 z-50" />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header className="sticky top-0 z-50" />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calligraphy" element={<Calligraphy />} />
+          <Route path="/electronics" element={<Electronics />} />
+          <Route path="/webdev" element={<WebDev />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+}  
 
 export default App;

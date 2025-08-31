@@ -26,7 +26,7 @@ export default function About() {
             
             <div className="space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
-                Hi, I'm Sampson
+                Hi, I'm Craig
               </h2>
               
               <div className="space-y-4 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl">

@@ -29,7 +29,7 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="scroll-mt-18 lg:scroll-mt-23 font-space text-primary h-auto section-effect py-10"
+      className="scroll-mt-18 lg:scroll-mt-23 font-space text-primary h-auto section-effect py-5 lg:py-15"
     >
       <h1 className="uppercase text-4xl md:text-5xl font-bold text-center pb-4 lg:pb-8">
         services & solutions

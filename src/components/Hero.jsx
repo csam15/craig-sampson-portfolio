@@ -11,10 +11,10 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className={`scroll-mt-25 flex flex-col justify-between font-space h-[80vh] xl:h-[85vh] `}
+      className={`scroll-mt-25 flex flex-col justify-between font-space h-[80vh] xl:h-[85vh]`}
     >
-      <div className="flex-1 flex flex-col justify-center items-center section-effect mb-0">
-        <div className="font-outfit uppercase text-primary text-center text-lg md:text-xl lg:text-2xl tracking-wider lg:pr-115 xl:pr-155">
+      <div className="flex-1 flex flex-col justify-center items-center section-effect">
+        <div className="font-outfit uppercase text-primary text-center text-lg md:text-xl lg:text-2xl tracking-wider xl:pr-155">
           <TypeAnimation
             sequence={[
               "Full Stack Developer",

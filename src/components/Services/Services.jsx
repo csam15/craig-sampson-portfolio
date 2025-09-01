@@ -27,9 +27,9 @@ const services = {
 
 export default function Services() {
   return (
-    <div id="services" className="scroll-mt-23 font-space text-primary h-auto">
-      <div className="section-effect flex flex-col justify-center items-center gap-6 py-12 px-4 sm:px-6 lg:px-8">
-        <h1 className="uppercase text-4xl font-bold text-center">services & solutions</h1>
+    <div id="services" className="scroll-mt-18 lg:scroll-mt-23 font-space text-primary h-auto section-effect">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-10 py-12 px-4 sm:px-6 lg:px-8">
+        <h1 className="uppercase text-4xl md:text-5xl font-bold text-center xl:pr-4">services & solutions</h1>
         <ServiceCard
           icon={services.webdev.icon}
           title={services.webdev.title}

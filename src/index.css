@@ -17,8 +17,9 @@
 
 @layer components {
   .section-effect {
-    @apply mb-4 mx-4 lg:mb-6 lg:mx-8 rounded-xl bg-background p-4 sm:p-6 md:p-8 lg:p-12;
+    @apply my-4 mx-4 lg:mb-6 lg:mx-8 xl:mx-14 rounded-xl bg-background p-4 sm:p-6 md:p-8 lg:p-12 shadow-2xl;
   }
+  
   .service-card {
     @apply bg-gradient-to-t from-background to-background-secondary;
   }

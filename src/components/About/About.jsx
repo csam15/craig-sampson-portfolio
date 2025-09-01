@@ -6,9 +6,9 @@ export default function About() {
   return (
     <div
       id="about"
-      className="scroll-mt-23 font-space text-primary h-auto"
+      className="scroll-mt-23 font-space text-primary h-auto section-effect"
     >
-      <div className="max-w-7xl section-effect">
+      <div className="max-w-7xl">
         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-center mb-16">
           ABOUT
         </h1>

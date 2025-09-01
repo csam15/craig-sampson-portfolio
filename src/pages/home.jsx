@@ -6,7 +6,7 @@ import Services from "../components/Services/Services.jsx";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gradient-to-r from-secondary to-indigo-300">
       <Hero />
     </div>
   );

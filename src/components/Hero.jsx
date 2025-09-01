@@ -9,9 +9,9 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="scroll-mt-25 flex flex-col justify-between font-space pt-10 lg:pt-0 h-[90vh] lg:h-[calc(100vh-85px)] bg-background my-2 sm:my-4 md:my-6 lg:my-8 mx-4 sm:mx-6 md:mx-10 lg:mx-16 xl:mx-22 rounded-3xl border-y-2 border-secondary"
+      className="scroll-mt-25 flex flex-col justify-between font-space h-[90vh] lg:h-[calc(100vh-85px)]"
     >
-      <div className="flex-1 flex flex-col justify-center items-center">
+      <div className="flex-1 flex flex-col justify-center items-center section-effect">
         <div className="font-outfit uppercase text-primary text-center text-lg md:text-xl lg:text-2xl tracking-wider lg:pr-120">
           <TypeAnimation
             sequence={[

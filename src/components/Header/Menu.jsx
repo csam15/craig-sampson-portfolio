@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import hamburger from "../../assets/hamburger-menu.svg";
 import x from "../../assets/cross-menu-w.png";
 
-const sections = ["home", "services", "projects", "about", "contact", "resume"];
+const sections = ["home", "services", "about", "contact", "resume"];
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);

@@ -11,10 +11,10 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className={`scroll-mt-25 flex flex-col justify-between font-space h-[80vh] xl:h-[85vh]`}
+      className={`scroll-mt-25 flex flex-col justify-between font-space h-auto xl:h-[80vh]`}
     >
-      <div className="flex-1 flex flex-col justify-center items-center section-effect">
-        <div className="font-outfit uppercase text-primary text-center text-lg md:text-xl lg:text-2xl tracking-wider xl:pr-155">
+      <div className="flex-1 flex flex-col justify-center gap-3 items-center section-effect mb-0">
+        <div className="font-outfit uppercase text-primary text-center text-lg md:text-xl lg:text-2xl tracking-wider xl:pr-115">
           <TypeAnimation
             sequence={[
               "Full Stack Developer",
@@ -30,13 +30,13 @@ export default function Hero() {
             repeat={Infinity}
           />
         </div>
-        <div className="text-6xl md:text-8xl xl:text-9xl text-center font-bold text-white my-4 lg:my-3 px-4">
+        <div className="text-6xl md:text-7xl xl:text-8xl text-center font-bold text-white my-4 lg:my-3 px-4">
           <h1>CRAIG SAMPSON</h1>
         </div>
         <h3 className="uppercase font-outfit text-primary text-lg md:text-2xl lg:text-3xl text-center px-10 md:px-5">
           Crafting solutions through code, creativity and repair
         </h3>
-        <div className="flex flex-col sm:flex-row justify-center items-center mt-10 gap-6 lg:gap-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center mt-6 lg:mt-10 gap-4 lg:gap-8">
           <PrimaryButton
             img={github}
             link="https://github.com/csam15"

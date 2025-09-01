@@ -31,7 +31,7 @@ export default function NavBar() {
   return (
     <>
       <nav className="hidden md:block">
-        <ul className="flex space-x-8 font-space md:text-lg lg:text-xl text-primary">
+        <ul className="flex space-x-4 lg:space-x-8 font-space md:text-lg lg:text-xl text-primary">
           {sections.map((section) => (
             <li key={section}>
               <a

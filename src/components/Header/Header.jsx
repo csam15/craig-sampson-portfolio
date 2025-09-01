@@ -1,4 +1,4 @@
-import Logo from "../../assets/react.svg";
+import Logo from "../../assets/Logo.png";
 import NavBar from "./NavBar";
 import Menu from "./Menu";
 import Button from "../Buttons/Button.jsx";
@@ -6,7 +6,7 @@ import Button from "../Buttons/Button.jsx";
 function LogoHeader() {
   return (
     <a href="#home" className="text-3xl font-bold text-gray-800">
-      <img src={Logo} alt="Craig Sampson Logo" />
+      <img src={Logo} alt="Craig Sampson Logo" className="h-10 md:h-12" />
     </a>
   );
 }

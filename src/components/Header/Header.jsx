@@ -5,7 +5,7 @@ import Button from "../Buttons/Button.jsx";
 
 function LogoHeader() {
   return (
-    <a href="#home" className="text-3xl font-bold text-gray-800">
+    <a href="/" className="text-3xl font-bold text-gray-800">
       <img src={Logo} alt="Craig Sampson Logo" className="h-10 md:h-12" />
     </a>
   );

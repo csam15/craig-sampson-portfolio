@@ -9,8 +9,8 @@ export default function Home() {
     <div className="bg-gradient-to-r from-secondary to-indigo-300">
       <Hero />
       <Services />
-      <About />
       <Projects />
+      <About />
       <Contact />
     </div>
   );

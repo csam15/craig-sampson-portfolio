@@ -6,6 +6,7 @@ import Home from "./pages/home.jsx";
 import Calligraphy from "./pages/calligraphy.jsx";
 import Electronics from "./pages/electronics.jsx";
 import WebDev from "./pages/webdev.jsx";
+// import backg from "./assets/background.svg"
 
 function App() {
   return (

@@ -15,21 +15,8 @@
   --color-error: #cf6679;
 }
 
-@keyframes slide-across {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-slide-across {
-  animation: slide-across 30s linear infinite;
-}
-
-@media (min-width: 1024px) { /* Tailwind's lg breakpoint */
-  .animate-slide-across {
-    animation-duration: 80s;
+@layer components {
+  .section-effect {
+    @apply mb-4 mx-4 lg:mb-6 lg:mx-8 rounded-xl bg-background p-4 sm:p-6 md:p-8 lg:p-12;
   }
 }

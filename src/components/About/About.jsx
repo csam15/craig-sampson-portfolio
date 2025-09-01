@@ -6,9 +6,9 @@ export default function About() {
   return (
     <div
       id="about"
-      className="scroll-mt-23 font-space text-primary min-h-screen bg-background py-12 px-4 sm:px-10 lg:px-14 m-2 md:m-6 lg:my-10 lg:mx-30 rounded-3xl border-y-2 border-secondary"
+      className="scroll-mt-23 font-space text-primary h-auto"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl section-effect">
         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-center mb-16">
           ABOUT
         </h1>

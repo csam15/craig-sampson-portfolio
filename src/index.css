@@ -11,12 +11,15 @@
   --color-primary: #d1b3f5;
   --color-secondary: #4617b6;
   --color-secondary-blur: #250374;
-  --color-accent: #3fffef;
+  --color-accent: #a5fcf4;
   --color-error: #cf6679;
 }
 
 @layer components {
   .section-effect {
     @apply mb-4 mx-4 lg:mb-6 lg:mx-8 rounded-xl bg-background p-4 sm:p-6 md:p-8 lg:p-12;
+  }
+  .service-card {
+    @apply bg-gradient-to-t from-background to-background-secondary;
   }
 }

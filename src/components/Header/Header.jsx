@@ -1,7 +1,7 @@
 import Logo from "../../assets/Logo.png";
 import NavBar from "./NavBar";
 import Menu from "./Menu";
-import Button from "../Buttons/Button.jsx";
+import { PrimaryButton } from "../Buttons/Button.jsx";
 
 function LogoHeader() {
   return (
@@ -17,7 +17,7 @@ export default function Header() {
       <div className="flex items-center justify-between w-full md:hidden">
         <LogoHeader />
         <div className="flex items-center justify-center gap-4">
-          <Button link="#contact" label="CONTACT" button="primary" />
+          <PrimaryButton link="#contact" label="CONTACT" button="primary" />
           <Menu />
         </div>
       </div>

@@ -1,4 +1,6 @@
-export default function PrimaryButton({ link, img, label, button }) {
+import { Link } from "react-router-dom";
+
+export function PrimaryButton({ link, img, label, button }) {
   return (
     <a
       href={link}
@@ -9,5 +11,13 @@ export default function PrimaryButton({ link, img, label, button }) {
       ) : null}
       {label}
     </a>
+  );
+}
+
+export function CardButton({ label, link }) {
+  return (
+    <Link to={link} className="border rounded-xl text-center p-1 text-accent max-w-30 hover:bg-gradient-to-b hover:from-background hover:to-background-secondary">
+      <span>{label}</span>
+    </Link>
   );
 }

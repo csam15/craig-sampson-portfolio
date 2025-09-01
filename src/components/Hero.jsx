@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 
-import Button from "./Buttons/Button.jsx";
+import { PrimaryButton } from "./Buttons/Button.jsx";
 import github from "../assets/icons8-github.svg";
 import linkedin from "../assets/icons8-linkedin.svg";
 import gears from "../assets/gears.svg";
@@ -36,14 +36,14 @@ export default function Hero() {
         <h3 className="uppercase font-outfit text-primary text-lg md:text-2xl lg:text-3xl text-center px-10 md:px-5">
           Crafting solutions through code, creativity and repair
         </h3>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-10 gap-6 lg:gap-8">
-          <Button
+        <div className="flex flex-col sm:flex-row justify-center items-center mt-10 gap-6 lg:gap-8">
+          <PrimaryButton
             img={github}
             link="https://github.com/csam15"
             label="GITHUB"
           />
-          <Button img={gears} link="#services" label="SERVICES" button="primary" />
-          <Button
+          <PrimaryButton img={gears} link="#services" label="SERVICES" button="primary" />
+          <PrimaryButton
             img={linkedin}
             link="https://www.linkedin.com/in/craig-sampson15/"
             label="LINKEDIN"

@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const sections = ["home", "services","about",  "contact", "resume"];
+const sections = [
+  { name: "home" },
+  { name: "services" },
+  { name: "about" },
+  { name: "contact" },
+  { name: "resume" }
+];
 
 export default function NavBar() {
   const [active, setActive] = useState("home");
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,10 +21,10 @@ export default function NavBar() {
       
       // Check sections in reverse order to handle overlapping sections
       for (let i = sections.length - 1; i >= 0; i--) {
-        const id = sections[i];
-        const el = document.getElementById(id);
+        const section = sections[i];
+        const el = document.getElementById(section.name);
         if (el && scrollPosition >= el.offsetTop) {
-          current = id;
+          current = section.name;
           break;
         }
       }
@@ -28,24 +37,47 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (section) => {
+    if (location.pathname === '/') {
+      // Already on home page - scroll to section
+      document.getElementById(section.name)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // On different page - navigate to home page with hash
+      navigate(`/#${section.name}`);
+    }
+  };
+
   return (
     <>
       <nav className="hidden md:block">
         <ul className="flex space-x-4 lg:space-x-8 font-space md:text-lg lg:text-xl text-primary">
-          {sections.map((section) => (
-            <li key={section}>
-              <a
-                href={`#${section}`}
-                className={`hover:text-accent cursor-pointer transition-colors duration-600 ease-in-out ${
-                  section !== "resume" && active === section
-                    ? "border-b border-primary"
-                    : ""
-                }`}
+          {location.pathname === '/' ? (
+            // On home page - show all sections
+            sections.map((section) => (
+              <li key={section.name}>
+                <button
+                  onClick={() => handleNavClick(section)}
+                  className={`hover:text-accent cursor-pointer transition-colors duration-600 ease-in-out ${
+                    section.name !== "resume" && active === section.name
+                      ? "border-b border-primary"
+                      : ""
+                  }`}
+                >
+                  {section.name.charAt(0).toUpperCase() + section.name.slice(1)}
+                </button>
+              </li>
+            ))
+          ) : (
+            // On other pages - only show Home link
+            <li>
+              <button
+                onClick={() => handleNavClick({ name: 'home' })}
+                className="hover:text-accent cursor-pointer transition-colors duration-600 ease-in-out border-b border-primary"
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </a>
+                Home
+              </button>
             </li>
-          ))}
+          )}
         </ul>
       </nav>
     </>

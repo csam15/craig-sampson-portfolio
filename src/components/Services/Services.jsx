@@ -10,7 +10,7 @@ const services = {
     title: "Web Development",
     description: "Building responsive and functional websites.",
     link: "/webdev",
-    button: "See My Work",
+    button: "Projects",
   },
   electronics: {
     icon: electronics,
